@@ -1,0 +1,31 @@
+<Tab>:
+    # create size and alignment of tab
+	size_hint: .5, .5
+	pos_hint: {'center_x': .5, 'center_y': .5}
+	do_default_tab: False
+	
+	# Make tab 1
+	TabbedPanelItem:
+	    text: 'Tab 1'
+		Label:
+		    text:'First Tab'
+			
+			
+			
+	# Second tab
+	
+	TabbedPanelItem:
+	    text: 'Tab 2'
+		BoxLayout:
+		    Label:
+			    text: 'Push button'
+			Button:
+			    text: 'Click here'
+				
+				
+	# 3rd tab
+	
+	TabbedPanelItem:
+	    text: 'Tab 3'
+		RstDocument:
+		    text: '\n'.join(("Good morning, ore"))

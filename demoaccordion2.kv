@@ -1,0 +1,24 @@
+# .kv file of Accordion app
+
+# Allow style to image
+
+<MyImage@Image>:
+    keep_ratio: False
+    allow_stretch: True
+
+# Use different images to show usage of accordion
+
+<MyAccordion>:
+    orientation: 'vertical'
+    AccordionItem:
+        title: 'HTML5'
+        MyImage:
+            source: 'html.png'
+    AccordionItem:
+        title: 'NODE-JS'
+        MyImage:
+            source: 'node-js.png'
+    AccordionItem:
+        title: 'BOOTSTRAP'
+        MyImage:
+            source: 'bootstrap.png'
